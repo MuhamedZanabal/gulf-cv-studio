@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GulfCV Studio – Gulf-style CV & LinkedIn rewrite | استوديو السيرة الذاتية الخليجية</title>
+<meta name="description" content="Professional Gulf-style CV rewrite from $25 and CV + LinkedIn from $39. Delivered in 24–48 hours with one free revision. إعادة كتابة السيرة الذاتية بالأسلوب الخليجي.">
+<style>
+:root{--navy:#14365c;--blue:#1f6feb;--bg:#f6f8fb;--ink:#1b2430;--mut:#5b6877;--card:#fff;--ok:#117a4d}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Arabic",Tahoma,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+[dir=rtl] body{font-family:"Noto Sans Arabic",Tahoma,system-ui,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+header{background:var(--navy);color:#fff}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.logo{font-weight:800;letter-spacing:.3px}
+.lang button{background:transparent;border:1px solid #9fb6d3;color:#fff;padding:5px 12px;border-radius:20px;cursor:pointer;font-size:14px}
+.lang button.on{background:#fff;color:var(--navy)}
+.hero{padding:34px 0 46px}
+.hero h1{font-size:clamp(26px,5vw,40px);line-height:1.2;margin:0 0 12px}
+.hero p{font-size:18px;max-width:680px;margin:0 0 20px;color:#dbe6f4}
+.btn{display:inline-block;background:#ffb703;color:#222;font-weight:700;padding:13px 24px;border-radius:8px;text-decoration:none;border:0;font-size:17px;cursor:pointer}
+.btn:hover{background:#ffc83a}
+section{padding:38px 0}
+h2{font-size:26px;margin:0 0 6px;color:var(--navy)}
+.sub{color:var(--mut);margin:0 0 20px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid #e1e7ef;border-radius:12px;padding:22px}
+.price{font-size:38px;font-weight:800;color:var(--navy)}
+.price small{font-size:15px;color:var(--mut);font-weight:500}
+.card ul{padding-inline-start:20px;margin:10px 0 0}
+.tag{display:inline-block;background:#e8f1ff;color:#134a9c;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;margin-bottom:8px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pair figure{margin:0}
+.pair img{width:100%;border:1px solid #d6dde7;border-radius:6px;background:#fff}
+.pair figcaption{font-size:13px;font-weight:700;margin-bottom:4px;color:var(--mut)}
+.samp{margin-bottom:28px}
+.samp h3{margin:0 0 8px}
+.samp a{font-size:14px}
+details{background:#fff;border:1px solid #e1e7ef;border-radius:10px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+form{background:#fff;border:1px solid #e1e7ef;border-radius:12px;padding:24px}
+label{display:block;font-weight:600;margin:14px 0 5px}
+input,select,textarea{width:100%;padding:11px 12px;font:inherit;border:1px solid #bcc7d6;border-radius:8px;background:#fff;color:var(--ink)}
+textarea{min-height:170px}
+.chk{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin-top:16px}
+.chk input{width:auto;margin-top:5px}
+.note{font-size:14px;color:var(--mut)}
+#msg{margin-top:14px;padding:12px 14px;border-radius:8px;display:none}
+#msg.ok{display:block;background:#e5f6ed;color:var(--ok)}
+#msg.err{display:block;background:#fdeaea;color:#a12626}
+footer{background:#0f2744;color:#b9c8dc;padding:30px 0;font-size:14px}
+footer a{color:#fff}
+.hp{position:absolute;left:-9999px}
+.en,.ar{display:none}
+html[lang=en] .en{display:revert}
+html[lang=ar] .ar{display:revert}
+html[lang=en] span.en,html[lang=en] strong.en,html[lang=en] a.en{display:inline}
+html[lang=ar] span.ar,html[lang=ar] strong.ar,html[lang=ar] a.ar{display:inline}
+html[lang=en] a.btn.en,html[lang=ar] a.btn.ar,html[lang=en] .tag.en,html[lang=ar] .tag.ar{display:inline-block}
+html[lang=en] button .en,html[lang=ar] button .ar{display:inline}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;padding-inline-start:46px;position:relative;margin-bottom:14px}
+.steps li:before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;text-align:center;line-height:32px;font-weight:700}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="bar">
+   <div class="logo">GulfCV Studio</div>
+   <div class="lang"><button id="bEn" class="on" onclick="setLang('en')">English</button> <button id="bAr" onclick="setLang('ar')">العربية</button></div>
+  </div>
+  <div class="hero">
+   <h1 class="en">A CV written the way Gulf employers expect to read it.</h1>
+   <h1 class="ar">سيرة ذاتية مكتوبة بالأسلوب الذي يتوقعه أصحاب العمل في الخليج.</h1>
+   <p class="en">We rewrite your CV (and LinkedIn profile) with clear structure, strong wording and the details Gulf recruiters look for. From $25. Delivered in 24–48 hours after payment, with one free revision.</p>
+   <p class="ar">نعيد كتابة سيرتك الذاتية (وملفك على لينكدإن) بهيكل واضح وصياغة قوية وبالتفاصيل التي يبحث عنها مسؤولو التوظيف في الخليج. ابتداءً من 25 دولارًا. التسليم خلال 24–48 ساعة من الدفع، مع تعديل واحد مجاني.</p>
+   <a class="btn en" href="#order">Order now</a><a class="btn ar" href="#order">اطلب الآن</a>
+  </div>
+ </div>
+</header>
+
+<section id="packages"><div class="wrap">
+ <h2 class="en">Packages</h2><h2 class="ar">الباقات</h2>
+ <p class="sub en">Simple fixed prices in US dollars. Pay securely by PayPal invoice (card or PayPal balance).</p>
+ <p class="sub ar">أسعار ثابتة وواضحة بالدولار الأمريكي. الدفع بأمان عبر فاتورة PayPal (بطاقة أو رصيد PayPal).</p>
+ <div class="grid g2">
+  <div class="card">
+   <span class="tag en">CV only</span><span class="tag ar">السيرة الذاتية فقط</span>
+   <div class="price">$25</div>
+   <ul class="en"><li>Full rewrite of your CV in a clean, ATS-friendly layout</li><li>Gulf-style details: nationality, visa status, notice period, languages</li><li>Stronger bullet points built from what you tell us</li><li>Delivered as Word (DOCX) and PDF</li><li>24–48 hours after payment • 1 free revision</li></ul>
+   <ul class="ar"><li>إعادة كتابة كاملة لسيرتك الذاتية بتنسيق نظيف ومتوافق مع أنظمة الفرز الآلي</li><li>بيانات بالأسلوب الخليجي: الجنسية، حالة الإقامة، فترة الإشعار، اللغات</li><li>نقاط أقوى مبنية على المعلومات التي تزوّدنا بها</li><li>التسليم بصيغتي Word (DOCX) وPDF</li><li>24–48 ساعة بعد الدفع • تعديل واحد مجاني</li></ul>
+  </div>
+  <div class="card" style="border-color:#1f6feb">
+   <span class="tag en">CV + LinkedIn</span><span class="tag ar">السيرة + لينكدإن</span>
+   <div class="price">$39</div>
+   <ul class="en"><li>Everything in the CV package</li><li>LinkedIn headline, About section and experience wording</li><li>Keyword suggestions for your target role</li><li>Delivered as DOCX, PDF and a text file to paste into LinkedIn</li><li>24–48 hours after payment • 1 free revision</li></ul>
+   <ul class="ar"><li>كل ما في باقة السيرة الذاتية</li><li>العنوان الوظيفي ونبذة «About» وصياغة الخبرات على لينكدإن</li><li>كلمات مفتاحية مقترحة للوظيفة المستهدفة</li><li>التسليم بصيغ DOCX وPDF وملف نصي للصقه في لينكدإن</li><li>24–48 ساعة بعد الدفع • تعديل واحد مجاني</li></ul>
+  </div>
+ </div>
+ <p class="note en">The service improves how your real experience is presented. It does not invent experience, and it does not guarantee interviews or job offers.</p>
+ <p class="note ar">تحسّن الخدمة طريقة عرض خبرتك الحقيقية. لا نختلق خبرات، ولا نضمن مقابلات أو عروض عمل.</p>
+</div></section>
+
+<section style="background:#fff"><div class="wrap">
+ <h2 class="en">How it works</h2><h2 class="ar">كيف تعمل الخدمة</h2>
+ <ol class="steps en">
+  <li><strong>Send your details.</strong> Fill in the form below with your target role and paste your current CV (or email it to us).</li>
+  <li><strong>Get your invoice.</strong> We email you a PayPal invoice for the package you chose.</li>
+  <li><strong>We start once it's paid.</strong> Your new CV is delivered within 24–48 hours as DOCX and PDF.</li>
+  <li><strong>One free revision.</strong> Tell us what to change within 7 days of delivery.</li>
+ </ol>
+ <ol class="steps ar">
+  <li><strong>أرسل بياناتك.</strong> املأ النموذج أدناه مع الوظيفة المستهدفة والصق سيرتك الحالية (أو أرسلها إلينا بالبريد).</li>
+  <li><strong>استلم الفاتورة.</strong> نرسل إلى بريدك فاتورة PayPal للباقة التي اخترتها.</li>
+  <li><strong>نبدأ العمل بعد الدفع.</strong> تصلك سيرتك الجديدة خلال 24–48 ساعة بصيغتي DOCX وPDF.</li>
+  <li><strong>تعديل واحد مجاني.</strong> أخبرنا بما تريد تغييره خلال 7 أيام من التسليم.</li>
+ </ol>
+</div></section>
+
+<section><div class="wrap">
+ <h2 class="en">Before &amp; after samples</h2><h2 class="ar">أمثلة قبل وبعد</h2>
+ <p class="sub en">Three illustrations for common Gulf roles. All people, employers and figures are fictional and were created only to show the style.</p>
+ <p class="sub ar">ثلاثة أمثلة لوظائف شائعة في الخليج. جميع الأشخاص وجهات العمل والأرقام خيالية وأُنشئت فقط لتوضيح الأسلوب.</p>
+ <div class="samp"><h3><span class="en">Accountant</span><span class="ar">محاسب</span></h3>
+  <div class="pair"><figure><figcaption><span class="en">Before</span><span class="ar">قبل</span></figcaption><a href="samples/accountant_before.pdf"><img loading="lazy" alt="Accountant CV before" src="samples/accountant_before.png"></a></figure>
+  <figure><figcaption><span class="en">After</span><span class="ar">بعد</span></figcaption><a href="samples/accountant_after.pdf"><img loading="lazy" alt="Accountant CV after" src="samples/accountant_after.png"></a></figure></div>
+  <a class="en" href="samples/accountant_after.pdf">Open the "after" PDF</a><a class="ar" href="samples/accountant_after.pdf">افتح ملف «بعد» PDF</a></div>
+ <div class="samp"><h3><span class="en">Nurse</span><span class="ar">ممرض</span></h3>
+  <div class="pair"><figure><figcaption><span class="en">Before</span><span class="ar">قبل</span></figcaption><a href="samples/nurse_before.pdf"><img loading="lazy" alt="Nurse CV before" src="samples/nurse_before.png"></a></figure>
+  <figure><figcaption><span class="en">After</span><span class="ar">بعد</span></figcaption><a href="samples/nurse_after.pdf"><img loading="lazy" alt="Nurse CV after" src="samples/nurse_after.png"></a></figure></div>
+  <a class="en" href="samples/nurse_after.pdf">Open the "after" PDF</a><a class="ar" href="samples/nurse_after.pdf">افتح ملف «بعد» PDF</a></div>
+ <div class="samp"><h3><span class="en">Sales executive</span><span class="ar">مندوب / مسؤول مبيعات</span></h3>
+  <div class="pair"><figure><figcaption><span class="en">Before</span><span class="ar">قبل</span></figcaption><a href="samples/sales_before.pdf"><img loading="lazy" alt="Sales CV before" src="samples/sales_before.png"></a></figure>
+  <figure><figcaption><span class="en">After</span><span class="ar">بعد</span></figcaption><a href="samples/sales_after.pdf"><img loading="lazy" alt="Sales CV after" src="samples/sales_after.png"></a></figure></div>
+  <a class="en" href="samples/sales_after.pdf">Open the "after" PDF</a><a class="ar" href="samples/sales_after.pdf">افتح ملف «بعد» PDF</a></div>
+</div></section>
+
+<section id="order" style="background:#fff"><div class="wrap">
+ <h2 class="en">Place your order</h2><h2 class="ar">قدّم طلبك</h2>
+ <p class="sub en">No account needed. You'll receive a PayPal invoice by email; we start once it's paid.</p>
+ <p class="sub ar">لا حاجة لإنشاء حساب. ستصلك فاتورة PayPal بالبريد الإلكتروني، ونبدأ العمل بعد الدفع.</p>
+ <form id="f" novalidate>
+  <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off">
+  <label for="name"><span class="en">Full name</span><span class="ar">الاسم الكامل</span></label>
+  <input id="name" name="name" required autocomplete="name">
+  <label for="email"><span class="en">Email (your invoice and CV are sent here)</span><span class="ar">البريد الإلكتروني (ترسل إليه الفاتورة والسيرة الذاتية)</span></label>
+  <input id="email" name="email" type="email" required autocomplete="email">
+  <label for="package"><span class="en">Package</span><span class="ar">الباقة</span></label>
+  <select id="package" name="package" required>
+   <option value="CV rewrite – $25">CV rewrite – $25 / السيرة الذاتية – 25$</option>
+   <option value="CV + LinkedIn – $39">CV + LinkedIn – $39 / السيرة + لينكدإن – 39$</option>
+  </select>
+  <label for="role"><span class="en">Target role and country/city</span><span class="ar">الوظيفة المستهدفة والدولة/المدينة</span></label>
+  <input id="role" name="target_role" required placeholder="e.g. Staff Nurse, Bahrain / مثال: ممرض، البحرين">
+  <label for="cv"><span class="en">Paste your current CV text (and your LinkedIn URL if you chose the LinkedIn package)</span><span class="ar">الصق نص سيرتك الحالية (ورابط لينكدإن إن اخترت باقة لينكدإن)</span></label>
+  <textarea id="cv" name="cv_text" required></textarea>
+  <p class="note en">Prefer to send a file? Leave a short note above and email your CV (Word or PDF) to <a href="mailto:zaiboy@mail.grokbot.com">zaiboy@mail.grokbot.com</a> from the same address you used here. File uploads are not supported on this page.</p>
+  <p class="note ar">تفضّل إرسال ملف؟ اكتب ملاحظة قصيرة أعلاه وأرسل سيرتك (Word أو PDF) إلى <a href="mailto:zaiboy@mail.grokbot.com">zaiboy@mail.grokbot.com</a> من نفس البريد المستخدم هنا. رفع الملفات غير مدعوم في هذه الصفحة.</p>
+  <label class="chk"><input type="checkbox" id="agree" required>
+   <span class="en">I agree to the <a href="#privacy">privacy note</a>. I confirm the information I send is true and mine to share, and I understand there is no guarantee of interviews or jobs.</span>
+   <span class="ar">أوافق على <a href="#privacy">إشعار الخصوصية</a>. أؤكد أن المعلومات التي أرسلها صحيحة ومن حقي مشاركتها، وأفهم أنه لا توجد ضمانات للمقابلات أو الوظائف.</span></label>
+  <p style="margin-top:18px"><button class="btn" type="submit" id="go"><span class="en">Submit my order</span><span class="ar">إرسال الطلب</span></button></p>
+  <div id="msg" role="status"></div>
+ </form>
+</div></section>
+
+<section><div class="wrap">
+ <h2 class="en">FAQ</h2><h2 class="ar">الأسئلة الشائعة</h2>
+ <div class="en">
+ <details><summary>Who writes my CV?</summary><p>Your CV is drafted with AI writing tools using only the information you provide, then checked for structure, spelling and Gulf-style formatting before delivery. GulfCV Studio is not a recruitment agency and we do not claim a human recruiter writes your CV.</p></details>
+ <details><summary>Will this get me a job?</summary><p>No one can promise that. A clearer CV helps employers understand your experience, but interviews and job offers depend on the market, your background and the employer.</p></details>
+ <details><summary>How and when do I pay?</summary><p>After you submit the form we email you a PayPal invoice for the package you chose. Work starts once the invoice is paid, and the 24–48 hour delivery time counts from payment.</p></details>
+ <details><summary>What do I receive?</summary><p>A Word (DOCX) and PDF copy of your new CV by email. With the LinkedIn package you also get a text file with your headline, About section and experience wording.</p></details>
+ <details><summary>What is included in the free revision?</summary><p>One round of changes (wording, order, adding facts you forgot) requested within 7 days of delivery. A different target role or a brand-new CV counts as a new order.</p></details>
+ <details><summary>Do you add experience or qualifications I don't have?</summary><p>No. We only improve how your real experience is presented. Please check every date, title and number before you send the CV to employers.</p></details>
+ <details><summary>Should I include a photo, age or religion?</summary><p>Practices vary by country and employer. We follow your preference and advise on what is common for your role. Nationality, visa status and notice period are commonly included in the Gulf.</p></details>
+ <details><summary>Can I get a refund?</summary><p>If we cannot start or deliver your order, we refund you in full. If you are not satisfied, use your free revision first; contact us within 7 days of delivery and we will try to make it right.</p></details>
+ </div>
+ <div class="ar">
+ <details><summary>من يكتب سيرتي الذاتية؟</summary><p>تُصاغ سيرتك الذاتية بمساعدة أدوات كتابة بالذكاء الاصطناعي اعتمادًا على المعلومات التي تقدمها فقط، ثم تُراجع من حيث الهيكل والإملاء والتنسيق الخليجي قبل التسليم. استوديو السيرة الخليجية ليس وكالة توظيف، ولا ندّعي أن مسؤول توظيف بشريًا يكتب سيرتك.</p></details>
+ <details><summary>هل ستحصل لي على وظيفة؟</summary><p>لا يمكن لأحد أن يعد بذلك. السيرة الأوضح تساعد أصحاب العمل على فهم خبرتك، لكن المقابلات والعروض تعتمد على السوق وخلفيتك وجهة العمل.</p></details>
+ <details><summary>كيف ومتى أدفع؟</summary><p>بعد إرسال النموذج نرسل إليك فاتورة PayPal للباقة التي اخترتها. يبدأ العمل بعد سداد الفاتورة، وتُحسب مدة التسليم (24–48 ساعة) من وقت الدفع.</p></details>
+ <details><summary>ماذا سأستلم؟</summary><p>نسخة Word (DOCX) ونسخة PDF من سيرتك الجديدة بالبريد الإلكتروني. وفي باقة لينكدإن تحصل أيضًا على ملف نصي فيه العنوان والنبذة وصياغة الخبرات.</p></details>
+ <details><summary>ماذا يشمل التعديل المجاني؟</summary><p>جولة واحدة من التعديلات (الصياغة، الترتيب، إضافة معلومات نسيتها) تُطلب خلال 7 أيام من التسليم. تغيير الوظيفة المستهدفة أو طلب سيرة جديدة كليًا يُعدّ طلبًا جديدًا.</p></details>
+ <details><summary>هل تضيفون خبرات أو مؤهلات ليست لدي؟</summary><p>لا. نحسّن فقط طريقة عرض خبرتك الحقيقية. يرجى مراجعة كل تاريخ ومسمى ورقم قبل إرسال السيرة إلى أصحاب العمل.</p></details>
+ <details><summary>هل أضع صورة أو العمر أو الديانة؟</summary><p>تختلف الممارسات حسب الدولة وجهة العمل. نتبع تفضيلك وننصحك بما هو شائع لوظيفتك. من الشائع في الخليج ذكر الجنسية وحالة الإقامة وفترة الإشعار.</p></details>
+ <details><summary>هل يمكنني استرداد المبلغ؟</summary><p>إذا لم نتمكن من بدء طلبك أو تسليمه نعيد إليك المبلغ كاملًا. وإذا لم تكن راضيًا فاستخدم التعديل المجاني أولًا، وتواصل معنا خلال 7 أيام من التسليم وسنحاول معالجة الأمر.</p></details>
+ </div>
+</div></section>
+
+<section id="privacy" style="background:#fff"><div class="wrap">
+ <h2 class="en">Privacy note</h2><h2 class="ar">إشعار الخصوصية</h2>
+ <div class="en">
+  <p>We collect only what you submit: your name, email, chosen package, target role and CV content. We use it to prepare your invoice, write your CV and communicate with you about your order.</p>
+  <ul><li><strong>Deletion:</strong> your CV and related files are deleted from our systems within 30 days of delivery.</li>
+  <li><strong>Law:</strong> personal data is handled in line with Bahrain's Personal Data Protection Law (Law No. 30 of 2018). You may ask us to access, correct or delete your data at any time by emailing <a href="mailto:zaiboy@mail.grokbot.com">zaiboy@mail.grokbot.com</a>.</li>
+  <li><strong>Service providers:</strong> the order form is delivered by FormSubmit (form-to-email service), payments and invoices by PayPal, and drafting uses AI writing tools. We do not sell your data or share it for advertising.</li>
+  <li><strong>Sensitive details:</strong> please leave out passport, civil ID (CPR) or bank numbers. They are not needed for your CV.</li></ul>
+ </div>
+ <div class="ar">
+  <p>نجمع فقط ما تقدمه: الاسم والبريد الإلكتروني والباقة المختارة والوظيفة المستهدفة ومحتوى السيرة الذاتية. نستخدمها لإعداد الفاتورة وكتابة سيرتك والتواصل معك بشأن الطلب.</p>
+  <ul><li><strong>الحذف:</strong> تُحذف سيرتك والملفات المرتبطة بها من أنظمتنا خلال 30 يومًا من التسليم.</li>
+  <li><strong>القانون:</strong> تُعالج البيانات الشخصية وفق قانون حماية البيانات الشخصية في البحرين (القانون رقم 30 لسنة 2018). يمكنك طلب الاطلاع على بياناتك أو تصحيحها أو حذفها في أي وقت عبر البريد <a href="mailto:zaiboy@mail.grokbot.com">zaiboy@mail.grokbot.com</a>.</li>
+  <li><strong>مزودو الخدمة:</strong> يُرسل النموذج عبر خدمة FormSubmit، وتتم المدفوعات والفواتير عبر PayPal، وتُستخدم أدوات كتابة بالذكاء الاصطناعي في الصياغة. لا نبيع بياناتك ولا نشاركها لأغراض إعلانية.</li>
+  <li><strong>بيانات حساسة:</strong> يرجى عدم إرسال أرقام جواز السفر أو البطاقة السكانية (CPR) أو الحسابات البنكية، فهي غير مطلوبة لسيرتك.</li></ul>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <p>© GulfCV Studio • <span class="en">Based in Bahrain • Not a recruitment agency • No guarantee of interviews or employment.</span><span class="ar">مقرها البحرين • ليست وكالة توظيف • لا ضمان للمقابلات أو التوظيف.</span></p>
+ <p>Contact / تواصل: <a href="mailto:zaiboy@mail.grokbot.com">zaiboy@mail.grokbot.com</a></p>
+</div></footer>
+
+<script>
+function setLang(l){
+  document.documentElement.lang=l; document.documentElement.dir=(l==='ar'?'rtl':'ltr');
+  document.getElementById('bEn').className=l==='en'?'on':''; document.getElementById('bAr').className=l==='ar'?'on':'';
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+(function(){var l=null;try{l=localStorage.getItem('lang')}catch(e){}
+ if(!l&&(navigator.language||'').toLowerCase().indexOf('ar')===0)l='ar'; if(l)setLang(l);})();
+
+var ENDPOINT='https://formsubmit.co/ajax/zaiboy@mail.grokbot.com';
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target,msg=document.getElementById('msg'),ar=document.documentElement.lang==='ar';
+  if(!f.name.value.trim()||!f.email.value.trim()||!f.target_role.value.trim()||!f.cv_text.value.trim()||!document.getElementById('agree').checked||!/^\S+@\S+\.\S+$/.test(f.email.value)){
+    msg.className='err';msg.textContent=ar?'يرجى تعبئة جميع الحقول الإلزامية والموافقة على إشعار الخصوصية.':'Please complete all fields, use a valid email and accept the privacy note.';return;}
+  var btn=document.getElementById('go');btn.disabled=true;
+  var data={name:f.name.value,email:f.email.value,package:f.package.value,target_role:f.target_role.value,cv_text:f.cv_text.value,
+    consent:'Agreed to privacy note',_subject:'New CV order – '+f.package.value+' – '+f.name.value,_template:'table',_captcha:'false',_honey:f._honey.value};
+  fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+  .then(function(r){return r.json()}).then(function(j){
+    if(j&&(j.success===true||j.success==='true')){
+      msg.className='ok';msg.textContent=ar?'تم استلام طلبك. ستصلك فاتورة PayPal على بريدك الإلكتروني، ونبدأ العمل بعد الدفع. تحقق أيضًا من مجلد الرسائل غير المرغوب فيها.':'Thank you – your order was received. We will email you a PayPal invoice; work starts once it is paid. Please also check your spam folder.';
+      f.reset();
+    } else throw new Error(j&&j.message||'failed');
+  }).catch(function(){
+    msg.className='err';msg.textContent=ar?'تعذّر إرسال النموذج. يرجى إرسال بياناتك وسيرتك مباشرة إلى zaiboy@mail.grokbot.com.':'Sorry, the form could not be sent. Please email your details and CV directly to zaiboy@mail.grokbot.com.';
+  }).then(function(){btn.disabled=false});
+});
+</script>
+</body>
+</html>
